@@ -4,9 +4,9 @@ tic
 
 % put the generated image in Ref folder and the original images in the same folder as the .m file
 
-RefImageList = dir('Sample/*.png');
+RefImageList = dir('Ref/*.png');
 
-ReferenceImage = (imread(['Sample/',RefImageList.name]));
+ReferenceImage = (imread(['Ref/',RefImageList.name]));
 
 GrayReferenceImage = uint16(ReferenceImage(:,:,3)) + bitsll(uint16(ReferenceImage(:,:,2)),8);
 
